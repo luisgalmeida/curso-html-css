@@ -1,0 +1,34 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes <br> ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagensn/p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagensn/m.png" type="image/png">
+        <img src="imagensn/g.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Colocando áudio</h1>
+    <p>Dessa forma da pra colocar áudio dentro do site só com html5</p>
+    <audio src="midia/ye.mp3" controls></audio>
+
+    <h1>Maneira diferente</h1>
+    <p>anotando no caderno</p>
+    <audio preload="none" controls>
+        <source src="midia/spotlight.mp3" type="audio/mpeg">
+       <source src="midia/spotlight.ogg" type="audio/ogg">
+       <source src="midia/spotlight.wav" type="audio/wav">
+       
+    </audio>
+    <p>Seu navegador não consegue reprodudir audio. <a href="midia/spotlight.mp3">Clique aqui para fazer o download</a></p>
+    <!--eu alterei muita coisa, revisar depois o autoplay, loop, download, tipos de arquivo de audio, etc.-->
+</body>
+</html> 
